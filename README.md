@@ -10,7 +10,9 @@ AMOLED displays rely on pixel driver circuits that address brightness uniformity
 Existing pixel circuits face the following challenges:
 
 -**2T1C Pixel Circuit:** Brightness uniformity deteriorates due to threshold voltage variations and IR voltage drops.
+
 -**5T2C Pixel Circuit:** While effective in compensating for non-idealities, the complexity reduces the aperture ratio and increases design overhead.
+
 -**Hybrid Designs:** Current-biased voltage programming methods improve uniformity but require long programming times and complex configurations.
 
 This study focuses on reducing transistor count while maintaining performance, addressing the limitations of existing designs.
@@ -20,9 +22,12 @@ This study focuses on reducing transistor count while maintaining performance, a
 The proposed 4T2C pixel circuit reduces one transistor compared to the 5T2C circuit, which simplifies the design and enhances the aperture ratio. The circuit transitions through three operational phases:
 
 -Threshold Voltage Detection Phase: Detects and compensates for Vth variations.
+
 -Data Input Phase: Programs the data voltage.
+
 -Emission Phase: Ensures steady luminance output during display operation.
 
 ### Key Changes
 -Replacement of constant Vref with a pulse signal for dynamic compensation.
+
 -Simplification of transistor count to improve aperture ratio and reduce complexity.
